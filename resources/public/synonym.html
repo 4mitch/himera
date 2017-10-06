@@ -170,6 +170,21 @@ printName();
 // No native implementation, must pull
 // aparts objects and arrays manually
 
+//Since ES6
+
+var o = {first: "Bob",
+middle: "J",
+last: "Smith"};
+
+var {first last middle} = o;
+...
+
+var color = [255, 255, 100, 0.5];
+var [red green alpha] = color;
+...
+
+//Before ES6
+
 var o = {first: "Bob",
          middle: "J",
          last: "Smith"};
